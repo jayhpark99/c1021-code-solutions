@@ -39,10 +39,6 @@ select {
 label {
   padding: 10px 0 3px 10px;
   font-family: 'Brandon Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 80%;
-  src: url('BrandonGrotesque-Medium.woff2') format('woff2');
 }
 
 button {
@@ -52,9 +48,6 @@ button {
   border-radius: 2em;
   padding: 0.7em 1.4em;
   font-family: 'AtlasGrotesk', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  src: url('AtlasGrotesk-Light-Web.woff2') format('woff2');
   margin-top: 8px;
 }
 
