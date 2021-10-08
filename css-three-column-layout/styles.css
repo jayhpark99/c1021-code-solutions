@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(27, 150, 217);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  margin: auto auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 50px;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+  margin: auto auto;
+}
+
+.column-full {
+  max-width: 100%;
+}
+
+.column-third {
+  max-width: calc(100% / 3);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto auto;
+}
+
+h1,
+h3,
+p {
+  text-align: center;
+  font-weight: 400;
+}
+
+p {
+  color: rgb(221, 221, 221);
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 50px;
+}
