@@ -1,0 +1,75 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+p {
+  color: rgb(120, 120, 120);
+  line-height: 1.5;
+}
+
+button {
+  background-color: white;
+  color: rgb(216, 105, 99);
+  border: rgb(216, 105, 99) 1px solid;
+  font-weight: 700;
+  padding: 12px 45px;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.column-fourth {
+  width: 25%;
+}
+
+.column-threefourths {
+  width: 75%;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1,
+p#header {
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 4px;
+  font-size: 4em;
+}
+
+h3 {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.pr40 {
+  padding-right: 50px;
+}
