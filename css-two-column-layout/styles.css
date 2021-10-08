@@ -21,7 +21,14 @@ button {
 
 .column-half {
   width: 50%;
-  margin-right: 50px;
+}
+
+.column-fourth {
+  width: 25%;
+}
+
+.column-threefourths {
+  width: 75%;
 }
 
 .row {
@@ -38,12 +45,25 @@ p#header {
   text-align: center;
 }
 
+h1 {
+  letter-spacing: 4px;
+}
+
+h3 {
+  letter-spacing: 1px;
+}
+
 .center {
   display: flex;
   justify-content: center;
 }
 
-.vertical {
-  float: left;
-  padding: 0 20px 150px 0;
+img {
+  width: 80%;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
