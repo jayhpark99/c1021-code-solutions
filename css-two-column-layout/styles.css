@@ -47,10 +47,12 @@ p#header {
 
 h1 {
   letter-spacing: 4px;
+  font-size: 4em;
 }
 
 h3 {
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .center {
@@ -66,4 +68,8 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+}
+
+.pr40 {
+  padding-right: 50px;
 }
