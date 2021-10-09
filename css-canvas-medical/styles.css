@@ -63,12 +63,26 @@ h5 {
   max-width: 50%;
 }
 
-.height {
-  height: 65px;
+.darken {
+  background-color: rgba(100, 100, 100, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.absolute {
+  position: absolute;
+  width: 50%;
 }
 
 .hero-text {
   line-height: 1.75;
+}
+
+.height {
+  height: 65px;
 }
 
 .foot {
@@ -119,15 +133,6 @@ p {
   border-bottom: 1px lightgrey solid;
 }
 
-.darken {
-  background-color: rgba(100, 100, 100, 0.3);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 #hero-image {
   background-image: url('images/hero.jpg');
   background-size: cover;
@@ -135,6 +140,7 @@ p {
   color: white;
   margin: 50px 0;
   position: relative;
+  height: 500px;
 }
 
 #locations {
