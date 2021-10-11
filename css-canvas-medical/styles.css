@@ -18,6 +18,10 @@
   padding: 10px 15px;
 }
 
+.lh2 {
+  line-height: 1.7;
+}
+
 .row {
   display: flex;
 }
@@ -49,12 +53,16 @@
 .menu-bar,
 h5 {
   display: inline-block;
+  position: relative;
+  right: 50px;
 }
 
 .header {
   color: rgb(10, 66, 101);
   font-family: 'Tiempos Headline', sans-serif;
   font-weight: 100;
+  position: relative;
+  left: 50px;
 }
 
 .menu-bar {
@@ -168,7 +176,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  margin: 50px 0;
+  margin: 50px 50px;
   position: relative;
   height: 450px;
 }
@@ -178,7 +186,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  margin: 50px 0;
+  margin: 50px 50px;
   position: relative;
   height: 450px;
 }
