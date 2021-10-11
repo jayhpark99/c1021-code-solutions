@@ -38,10 +38,22 @@
   width: 25%;
 }
 
+.paddingleftright {
+  padding: 50px 200px;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .container {
@@ -183,6 +195,16 @@ img {
 
 #hero-image2 {
   background-image: url('images/product/product-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 50px 50px;
+  position: relative;
+  height: 450px;
+}
+
+#hero-image3 {
+  background-image: url('images/implementation/implementation-header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
