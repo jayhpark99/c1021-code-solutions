@@ -42,6 +42,10 @@
   padding: 50px 200px;
 }
 
+.paddingleftright2 {
+  padding: 0 60px;
+}
+
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -52,8 +56,24 @@
   justify-content: center;
 }
 
+.font-weight {
+  font-weight: 200;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-color-grey {
+  color: rgb(120, 120, 120);
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.mb {
+  margin-bottom: 0;
 }
 
 .container {
