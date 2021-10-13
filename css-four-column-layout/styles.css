@@ -1,0 +1,38 @@
+.container {
+  font-family: 'Barlow', sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(247, 248, 250);
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.column-fourth {
+  width: 25%;
+}
+
+.row {
+  display: flex;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 90%;
+  padding-bottom: 20px;
+}
+
+.icon {
+  width: 25%;
+  justify-content: center;
+}
