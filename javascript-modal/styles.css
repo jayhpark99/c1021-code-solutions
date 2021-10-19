@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue {
+  color: white;
+  background-color: rgb(74, 74, 232);
+  border-width: 0;
+  border-radius: 6px;
+  padding: 0.5rem 2rem;
+  font-size: 125%;
+}
+
+.red {
+  color: white;
+  background-color: rgb(235, 93, 93);
+  border-width: 0;
+  border-radius: 6px;
+  padding: 0.5rem 2rem;
+  font-size: 125%;
+}
+
+.modal {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  margin: 6rem auto;
+  background-color: white;
+  padding: 50px 40px;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: flex;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
