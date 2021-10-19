@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+
+.lightbulb {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 4px solid rgba(254, 245, 211, 0.4);
+  margin-top: 8rem;
+}
+
+.on {
+  background-color: rgb(249, 234, 132);
+}
+
+.off {
+  background-color: rgb(37, 37, 37);
+  border: 4px solid rgba(34, 34, 34, 0.4);
+}
+
+.backgroundon {
+  background-color: rgb(253, 249, 241);
+}
+
+.backgroundoff {
+  background-color: black;
+}
