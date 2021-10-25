@@ -8,7 +8,7 @@ function take(array, count) {
   for (var i = 0; i < count; i++) {
     newArr.push(array[i]);
     if (array[i] === undefined) {
-      return [];
+      return array;
     }
   }
   return newArr;
