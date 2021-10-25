@@ -1,0 +1,23 @@
+.sentence {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.correct {
+  color: rgb(0, 255, 0);
+}
+
+.wrong {
+  color: red;
+}
+
+.next {
+  border-bottom: 2px solid black;
+}
+
+span {
+  padding-bottom: 2px;
+}
