@@ -7,12 +7,11 @@ return the array */
 function compact(array) {
   var newArr = [];
   for (var i = 0; i < array.length; i++) {
-    if (array[i] === false ||
-      array[i] === null ||
-      Number.isNaN(array[i]) === true ||
-      array[i] === 0 ||
-      array[i] === undefined || array[i] === '') {
-    } else {
+    if (array[i] !== false &&
+      array[i] !== null &&
+      Number.isNaN(array[i]) !== true &&
+      array[i] !== 0 &&
+      array[i] !== undefined && array[i] !== '') {
       newArr.push(array[i]);
     }
   }
