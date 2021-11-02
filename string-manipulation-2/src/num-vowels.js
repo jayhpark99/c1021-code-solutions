@@ -6,16 +6,13 @@ return output */
 function numVowels(string) {
   var count = 0;
   for (var i = 0; i < string.length; i++) {
-    if (string[i] === 'a' ||
-    string[i] === 'e' ||
-    string[i] === 'i' ||
-    string[i] === 'o' ||
-    string[i] === 'u' ||
-    string[i] === 'A' ||
-    string[i] === 'E' ||
-    string[i] === 'I' ||
-    string[i] === 'O' ||
-    string[i] === 'U') {
+    var lowerCased = string[i].toLowerCase();
+    if (lowerCased === 'a' ||
+    lowerCased === 'e' ||
+    lowerCased === 'i' ||
+    lowerCased === 'o' ||
+    lowerCased === 'u'
+    ) {
       count++;
     }
   }

@@ -10,5 +10,6 @@ function lastChars(length, string) {
   }
   for (var i = string.length - 1; i >= string.length - length; i--) {
     output = string[i] + output;
-  } return output;
+  }
+  return output;
 }

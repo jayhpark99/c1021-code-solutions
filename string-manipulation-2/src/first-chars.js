@@ -10,5 +10,6 @@ function firstChars(length, string) {
   }
   for (var i = 0; i < length; i++) {
     output = output + string[i];
-  } return output;
+  }
+  return output;
 }
