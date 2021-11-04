@@ -1,0 +1,28 @@
+.innerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.outerdiv {
+  border: 5px black solid;
+  text-align: center;
+}
+
+button:active {
+  background-color: black;
+}
+
+i {
+  margin: 1.5rem 0.25rem;
+  font-size: 1.5rem;
+}
+
+.fa-chevron-right {
+  font-size: 3rem;
+}
+
+.fa-chevron-left {
+  font-size: 3rem;
+}
