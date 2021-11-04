@@ -10,20 +10,19 @@
   text-align: center;
 }
 
-i {
-  font-size: 2.5rem;
-  padding: 0 2rem;
-}
-
-button {
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border: 4px black solid;
-  margin: 5px 5px 2rem;
-}
-
 button:active {
   background-color: black;
+}
+
+i {
+  margin: 1.5rem 0.25rem;
+  font-size: 1.5rem;
+}
+
+.fa-chevron-right {
+  font-size: 3rem;
+}
+
+.fa-chevron-left {
+  font-size: 3rem;
 }

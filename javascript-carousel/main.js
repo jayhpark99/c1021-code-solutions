@@ -1,15 +1,15 @@
-var $right = document.querySelector('.fa-angle-right');
-var $left = document.querySelector('.fa-angle-left');
+var $right = document.querySelector('.fa-chevron-right');
+var $left = document.querySelector('.fa-chevron-left');
 var $img = document.querySelector('img');
 var $outerdiv = document.querySelector('.outerdiv');
-var $buttons = document.querySelectorAll('button');
+var $icons = document.querySelectorAll('[data]');
 
 var currentImg = 0;
 var imgArray = ['images/001.png', 'images/004.png', 'images/007.png', 'images/025.png', 'images/039.png'];
 
 $outerdiv.addEventListener('click', changeImage);
 function changeImage(event) {
-  if (event.target.tagName === 'BUTTON') {
+  if (event.target.className === 'far fa-circle') {
     currentImg = parseInt(event.target.getAttribute('data'));
     $img.setAttribute('src', imgArray[currentImg]);
     change();
@@ -36,10 +36,10 @@ function previousImage(event) {
 }
 
 function changeButton() {
-  for (var i = 0; i < $buttons.length; i++) {
-    $buttons[i].style.backgroundColor = 'white';
+  for (var i = 0; i < $icons.length; i++) {
+    $icons[i].className = 'far fa-circle';
     if (currentImg === i) {
-      $buttons[i].style.backgroundColor = 'black';
+      $icons[i].className = 'fas fa-circle';
     }
   }
   clearInterval(interval);
