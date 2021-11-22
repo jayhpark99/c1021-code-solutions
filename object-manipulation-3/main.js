@@ -41,12 +41,12 @@ function shuffleArray(array) {
   return array;
 }
 
-var p1Score = players[0].hand[0].rank + players[0].hand[1].rank;
-var p2Score = players[1].hand[0].rank + players[1].hand[1].rank;
-var p3Score = players[2].hand[0].rank + players[2].hand[1].rank;
-var p4Score = players[3].hand[0].rank + players[3].hand[1].rank;
-
-var scoreArray = [p1Score, p2Score, p3Score, p4Score];
+var scoreArray = [
+  players[0].hand[0].rank + players[0].hand[1].rank,
+  players[1].hand[0].rank + players[1].hand[1].rank,
+  players[2].hand[0].rank + players[2].hand[1].rank,
+  players[3].hand[0].rank + players[3].hand[1].rank
+];
 
 console.log(scoreArray);
 
