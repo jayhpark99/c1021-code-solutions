@@ -50,7 +50,6 @@ var scoreArray = [
 
 console.log(scoreArray);
 
-console.log(Math.max(...scoreArray));
 for (var k = 0; k < scoreArray.length; k++) {
   if (scoreArray[k] === Math.max(...scoreArray)) {
     console.log('Player ' + (k + 1) + ' wins with a score of : ' + scoreArray[k]);
