@@ -1,0 +1,144 @@
+    1  exit
+    2  cd ~/repos
+    3  cd c1021-code-solutions
+    4  git pull origin master
+    5  cd http-messages
+    6  http https://example.com
+    7  http --verbose https://example.com
+    8  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+    9  http --body GET https://example.com > index.html
+   10  git status
+   11  cd ~/repos
+   12  cd c1021-code-solutions
+   13  git switch http-messages
+   14  git status
+   15  git add http-messages
+   16  git commit -m "compeleted httptp messages"
+   17  git push origin http-messages
+   18  git switch master
+   19  git pull origin master
+   20  exit
+   21  dev-env
+   22  exit
+   23  http http://ddragon.leagueoflegends.com/cdn/11.22.1/data/en_US/champion.json
+   24  http http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg
+   25  http http://ddragon.leagueoflegends.com/cdn/11.22.1/data/en_US/champion/Aatrox.json
+   26  http http://ddragon.leagueoflegends.com/cdn/11.22.1/data/en_US/champion/Yasuo.json
+   27  http://ddragon.leagueoflegends.com/cdn/11.22.1/data/en_US/champion/AurelionSol.json
+   28  http http://ddragon.leagueoflegends.com/cdn/11.22.1/data/en_US/champion/Vayne.json
+   29  exit
+   30  cd ~/repos
+   31  cd c1021-code-solutions
+   32  git branch es6-template-literals
+   33  git switch es6-template-literals
+   34  git status
+   35  git add .
+   36  git commit -m "completed es6-template-literals"
+   37  git push origin es6-template-literals
+   38  git switch master
+   39  git switch object-manipulation-3
+   40  git status
+   41  git add .
+   42  git commit -m "removed score variable declarations"
+   43  git push origin object-manipulation-3
+   44  git switch master
+   45  git status
+   46  git pull origin master
+   47  git switch object-manipulation-3
+   48  git status
+   49  git add .
+   50  git commit -m "removed unnecessary console.logs"
+   51  git push origin object-manipulation-3
+   52  git switch master
+   53  git pull origin master
+   54  git branch es6-destructuring
+   55  git switch es6-destructuring
+   56  git status
+   57  git add .
+   58  git commit -m "completed es6-destructuring"
+   59  git push origin es6-destructuring
+   60  git switch master
+   61  git pull origin master
+   62  git branch es6-arrow-functions
+   63  git switch es6-arrow-functions
+   64  whoami
+   65  git switch master
+   66  git branch command-line-basics
+   67  git switch command-line-basics
+   68  git status
+   69  cd command-line-basics
+   70  git switch master
+   71  pwd
+   72  man man
+   73  man cat
+   74  cat laziness.txt
+   75  cat laziness.txt impatience.txt
+   76  cat laziness.txt impatience.txt hubris.txt
+   77  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   78  cat three-virtues.txt
+   79  man ls
+   80  ls
+   81  ls -a
+   82  ls -F
+   83  ls -aF
+   84  ls -a
+   85  ls -F
+   86  ls -aF
+   87  man ls
+   88  ls lfz-staff
+   89  ls -aF lfz-staff
+   90  ls -F lfz-staff
+   91  ls -a lfz-staff
+   92  ls -aF lfz-staff > lfz-staff/contents.txt
+   93  cat lfz-staff/contents.txt
+   94  man pwd
+   95  pwd
+   96  Use the pwd command to write your current working directory to a new file named i-was-here.txt like this:
+   97  pwd > i-was-here.txt
+   98  ls
+   99  cat i-was-here.txt
+  100  man echo
+  101  echo 'Hello, World!'
+  102  echo 'Hello, World!' > hello.txt
+  103  ls
+  104  ls -aF
+  105  cat hello.txt
+  106  man touch
+  107  touch tag-youre-it.txt
+  108  ls
+  109  ls -a
+  110  man touch
+  111  touch snoot/boop.txt
+  112  ls snoot
+  113  man mkdir
+  114  mkdir parent
+  115  ls
+  116  mkdir parent
+  117  man mkdir
+  118  mkdir -p parent/child/grandchild
+  119  ls
+  120  ls parent
+  121  ls child
+  122  ls parent/child
+  123  ls parent/child/grandchild
+  124  touch parent/child/grandchild/.gitkeep 
+  125  ls parent/child/grandchild
+  126  ls -a parent/child/grandchild
+  127  man mv
+  128  mv pokiemans pokemon
+  129  ls
+  130  ls -a
+  131  man rm
+  132  rm lol.txt
+  133  ls
+  134  rm -r kill-me
+  135  ls -a
+  136  man pc
+  137  man cp
+  138  cp and-then.txt
+  139  cp and-then.txt no-and-then.txt
+  140  ls -a
+  141  cat and-then.txt no-and-then.txt
+  142  man history
+  143  history
+  144  history > command-history.txt
