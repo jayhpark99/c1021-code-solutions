@@ -22,13 +22,16 @@ const grades = {
   }
 };
 
+function objtoArray() {
+  const array = [];
+  for (const key in grades) {
+    array.push(grades[key]);
+  }
+  return array;
+}
+
 app.get('/api/grades', (req, res) => {
-  res.json(() => {
-    const array = [];
-    for (const key in grades) {
-      array.push(grades[key]);
-    }
-  });
+  res.json(objtoArray());
 });
 
 app.listen(3000, () => {
