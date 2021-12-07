@@ -53,7 +53,7 @@ app.post('/api/grades', (req, res) => {
     db.query(sql, params)
       .then(result => {
         const grade = result.rows[0]
-        res.status(200).json(grade)
+        res.status(201).json(grade)
       })
       .catch(err => {
         console.err(err)
