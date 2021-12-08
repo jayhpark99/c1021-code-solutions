@@ -35,5 +35,5 @@ console.log(balance)
 const composite = traits.reduce((outputObj, trait) => {
   Object.assign(outputObj, trait)
   return outputObj
-})
+}, {})
 console.log(composite)
