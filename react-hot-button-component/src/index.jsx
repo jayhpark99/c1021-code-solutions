@@ -8,7 +8,7 @@ class HotButton extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick() {
-    this.setState({ timesClicked: this.state.timesClicked+=1 })
+    this.setState({ timesClicked: this.state.timesClicked + 1 })
   }
   render () {
     let className
