@@ -1,0 +1,17 @@
+.outer{
+  background: gray;
+  width: 40px;
+  height: 20px;
+  border-radius: 1rem
+}
+
+.inner{
+  background: white;
+  width: 20px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* .on {
+  background: green;
+} */
