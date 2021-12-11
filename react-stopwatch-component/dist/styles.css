@@ -1,0 +1,16 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black
+}
+
+.fa-play, .fa-pause {
+  position: relative;
+  left: 2.7rem
+}
+
+i:active {
+ position: relative;
+ top: 2px
+}
