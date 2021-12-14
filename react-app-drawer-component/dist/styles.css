@@ -1,0 +1,40 @@
+.sidebar {
+  height: 100%;
+  width: 250px;
+  transition: transform 0.5s;
+  display: inline-block;
+  background-color:white;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-250px);
+}
+
+.sidebar.on {
+  transform: translateX(0);
+}
+
+.background {
+  position: fixed;
+  inset: 0 0 0 50px;
+  background: white;
+  transition: background 0.5s;
+}
+
+.background.on {
+  background: gray;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+li {
+  padding: 0 0rem 0.5rem 1rem;
+}
+
+i {
+  position: fixed;
+}
