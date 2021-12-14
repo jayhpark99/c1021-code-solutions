@@ -1,0 +1,53 @@
+.sidebar-off {
+  height: 100%;
+  width: 0px;
+  transition: 0.5s;
+  display: inline-block;
+  background-color:#ffffff;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidebar-on {
+  height: 100%;
+  width: 250px;
+  transition: width 0.5s;
+  display: inline-block;
+  background-color:white;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.background-on {
+  position: fixed;
+  inset: 0;
+  background: gray;
+  transition: 0.5s
+}
+
+.background-off {
+  position: fixed;
+  inset: 0 0 0 50px;
+  background: white;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  white-space: nowrap;
+}
+
+li {
+  padding: 0 0rem 0.5rem 1rem;
+}
+
+i {
+  position: fixed;
+}
