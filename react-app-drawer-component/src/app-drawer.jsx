@@ -16,11 +16,11 @@ export default class AppDrawer extends React.Component {
     let sideBarClassName
     let backgroundClassName
     if (this.state.isOpened === false) {
-      sideBarClassName = 'sidebar-off'
-      backgroundClassName = 'background-off'
+      sideBarClassName = 'sidebar'
+      backgroundClassName = 'background'
     } else {
-      sideBarClassName = 'sidebar-on'
-      backgroundClassName = 'background-on'
+      sideBarClassName = 'sidebar on'
+      backgroundClassName = 'background on'
     }
     return (
       <div>
