@@ -5,6 +5,10 @@ export default class Accordion extends React.Component {
     super(props)
   }
   render() {
-    return
+    return (
+      <div>
+        <h1>Accordion</h1>
+      </div>
+    )
   }
 }
