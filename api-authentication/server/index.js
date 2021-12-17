@@ -47,27 +47,34 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   if (!username || !password) {
     throw new ClientError(401, 'invalid login');
   }
-
-  /* your code starts here */
-
-  /**
-   * Query the database to find the "userId" and "hashedPassword" for the "username".
-   * Then, 😉
-   *    If no user is found,
-   *      throw a 401: 'invalid login' error.
-   *    If a user is found,
-   *      confirm that the password included in the request body matches the "hashedPassword" with `argon2.verify()`
-   *      Then, 😉
-   *        If the password does not match,
-   *          throw a 401: 'invalid login' error.
-   *        If the password does match,
-   *          Create a payload object containing the user's "userId" and "username".
-   *          Create a new signed token with `jwt.sign()`, using the payload and your TOKEN_SECRET
-   *          Send the client a 200 response containing the payload and the token.
-   *      Catch any error.
-   * Catch any error.
-   */
-
+  const sql = `
+  select "userId", "hashedPassword"
+  from "users"
+  where "username" = $1
+  `
+  const params = [username]
+  db.query(sql, params)
+    .then(result => {
+      if (result.rows.length === 0) {
+        throw new ClientError(401, 'invalid login')
+      }
+      const hashedPassword = result.rows[0].hashedPassword
+      argon2
+        .verify(hashedPassword, password)
+        .then(match => {
+          if (match === false) {
+            throw new ClientError(401, 'invalid login')
+          }
+          const user = {
+            userId: result.rows[0].userId,
+            username: username
+          }
+          const token = jwt.sign(user, process.env.TOKEN_SECRET);
+          res.status(200).send({user, token})
+        })
+        .catch(error => next(error))
+    })
+    .catch(error => next(error))
 });
 
 app.use(errorMiddleware);
