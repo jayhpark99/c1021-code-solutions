@@ -14,10 +14,24 @@
 - server receives the request and will throw an error if there is an issue with username and password
 - server runs a sql query for the database to find the row with the matching username
 - user is destructured from the result and userId and hashedPassword are destructured from user
-- argon2 verifies that the 2 passwords match, and if they do, it creates a payload with the userId and username and creates a new token for the user and sends them as a JSON string
+- argon2 verifies that the 2 passwords match, and if they do
+- it creates a payload with the userId and username and creates a new token for the user and sends them as a JSON string
 - client receives response and parses it to a JS object and if user and token are truthy
 - onSignIn method of props of AuthForm class is called with the parsed response as its argument
+- this calls the handleSignIn method of App class and user and token are destructured from result
+- the token is saved to local storage and user property of state is updated with user as its new value
 
 3. User can stay signed in (even if they refresh the page).
--
+- when user refreshes the page, componentDidMount is called and calls getItem method of localstorage
+- if the return is truthy, user is set to return of decodeToken function called with token as its argument
+- if falsy, user is set to null
+- state is updated with user being user and isAuthorizing being false
+- render is called after state is updated and re-renders the app component
+- react updates the dom
+
 4. User can sign out.
+- when user clicks sign out button, its prop onClick calls handleSignOut of class App and the token is removed from lcoal storage
+- user property of state is updated with null as its new value
+- render is called after state is updated and re-renders the app component
+- because this.state.user is null, the value of the user property of contextValue is null and the global value of user is now null
+- react updates the dom
