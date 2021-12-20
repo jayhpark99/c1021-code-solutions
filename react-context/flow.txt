@@ -1,0 +1,23 @@
+1. User can sign up.
+- when register button of AuthForm is clicked, handleSubmit is called
+- post request is sent to '/api/auth/sign-up'
+- server receives the request and will throw an error if there is an issue with username and password
+- argon2 creates a hashedPassword and server will run a sql query for the database
+- database inserts username and hashedPassword into users table
+- then the result is destructured into the variable user and sent as a response back to the client as a JSON string
+- the client receives the response, and then parses it to a JS object
+- after signing-up, the hash location is changed to 'sign-in'
+
+2. User can sign in.
+- when log in of AuthForm is clicked, handleSubmit is called
+- post request is sent to '/api/auth/sign-in'
+- server receives the request and will throw an error if there is an issue with username and password
+- server runs a sql query for the database to find the row with the matching username
+- user is destructured from the result and userId and hashedPassword are destructured from user
+- argon2 verifies that the 2 passwords match, and if they do, it creates a payload with the userId and username and creates a new token for the user and sends them as a JSON string
+- client receives response and parses it to a JS object and if user and token are truthy
+- onSignIn method of props of AuthForm class is called with the parsed response as its argument
+
+3. User can stay signed in (even if they refresh the page).
+-
+4. User can sign out.
