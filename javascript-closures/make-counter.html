@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Counter</title>
+</head>
+<body>
+  <script>
+    const makeCounter = function() {
+      let counter = 0
+      function changeBy(val) {
+        counter += val
+      }
+      return {
+        increment: () => changeBy(1),
+        decrement: () => changeBy(-1),
+        value: () => counter
+        }
+      }
+  </script>
+</body>
+</html>
